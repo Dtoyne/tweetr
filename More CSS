@@ -1,0 +1,73 @@
+Detailed Positioning:
+
+(Shay Howe)
+
+Containing Floats:
+
+Floating elements is a natural process when building a website's layout, and is
+the instinctive method for positioning elements on a page. Floats allow
+elements to appear next to, or apart from, one another. They provide the ability
+to build a natural flow within a layout and allow elements
+to interact with one another based on their size and the
+size of their containing parent.
+
+When floated, an element's position is dependent on the other elements positioned around it.
+Will that element run into the one next to it? Will it appear on a new line?
+This all depends on the DOM (Document Object Model) and what surrounds an element.
+
+What is the DOM:
+
+The DOM is an API for HTML and XML docs which provides their structural representation.
+In our case, we are speaking specifically to HTML docs, thus the DOM represents
+all of the different elements and their relationship to each other.
+
+The representation can be considered a tree of sorts, with each element having
+a different relationship with those around it. Elements neseted inside other have
+a parent and child relationship while elements that share the same parent
+have a sibling relationship.
+
+A CSS psuedo-element is used to style specified parts of an element. For example,
+it can be used to: Style the first letter, or line, of an element. Insert
+content before, or after, the content of an element.
+
+Effectively containing floats:
+
+One common practice is to assign a class to the parent element which indluces
+the floats needing to be contained. Using the clearfix technique for example,
+Dan Cederholm helped coin the class name 'group'. The group class name can
+then be applied to any parent element needing to contain floats.
+
+Position Property:
+
+Occasionally you need more control over the position of an element, more than a gloat can prvoide,
+in which case the position property comes into play. The position property accepts
+five different values, each of which provide different ways to uniquely position
+an element.
+
+Position static:
+
+Elements by default have the position value of static, meaning they don't have, nor will they
+accept, any specific box offset properties. Furthermore, elements will be
+positioned as intended, with their default behaviors.
+
+Five Position Properties:
+
+1. Static
+2. Relative
+3. Absolute
+4. Fixed
+5. Inherit
+
+Boxes in the normal flow belong to a formatting context, which may be block or inline
+but not both simultaneously. Block boxes participate in a block formatting context.
+Inline boxes participate in an inline formatting context.
+
+Think of a 'box' as a wooden block. Think of the 'normal flow' as a law similar
+to the law of gravity. The normal flow of the document is how your elements stackone on top
+of each other, from the top down, in the order in which they appear in your html.
+What you couldn't do as a child, however, was give those blcolks properties that could defy the
+law of gravity. All of the sudden, CSS seems alot cooler than those alphabet blocks.
+
+Elements by default have the position value of static, meaning they don't have, nor will they
+accept, any specific box offset properties. Furthermore, elements will be positioned as intended,
+with their default behaviors.

@@ -15,9 +15,20 @@ html {
  */
 
 body {
-  margin: 0;
+  margin-top: 140px;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+  width: 450px;
+  align-content: center;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  height: 100%;
 }
 
 /*
