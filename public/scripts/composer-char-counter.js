@@ -4,9 +4,9 @@ $(document).ready(function() {
     overCount = 140 - this.value.length
     $(this).siblings(".counter").text(overCount)
     if (overCount < 0) {
-      $("span.counter").addClass("overlimit")
+      $("span.counter").addClass("exceedlimit")
     } else {
-      $("span.counter").removeClass("overlimit")
+      $("span.counter").removeClass("exceedlimit")
     }
   })
 })

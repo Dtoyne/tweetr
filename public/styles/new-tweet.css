@@ -24,6 +24,6 @@ textarea {
   padding-right: 1em;
 }
 
-.counter.overlimit {
+.counter.exceedlimit {
   color: #ff0000;
 }
