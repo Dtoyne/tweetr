@@ -44,16 +44,31 @@
   padding: 1em;
   border-top: thin solid #eee;
   font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.tweet .icon-container {
+  /*display: flex;
+  flex-direction: row;
+  align-content: center;*/
+  margin-left: auto;
+
 }
 
 .tweet .hover-icons {
-  float: right;
+  /*float: right;*/
   color: #31cdba;
-  visibility: hidden;
+  /*visibility: hidden;*/
+  /*opacity: 0;*/
+  opacity: 0;
+  padding: 0 5px;
 }
 
 .tweet:hover .hover-icons {
-  visibility: visible;
+  /*visibility: visible;*/
+  opacity: 1;
 }
 
 .tweet:hover {

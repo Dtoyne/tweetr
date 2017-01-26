@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  // Function Lifted from Stack Overflow:
+
   function timeDifference(datestamp) {
     var msPerMinute = 60 * 1000;
     var msPerHour = msPerMinute * 60;
@@ -44,10 +46,10 @@ $(document).ready(function() {
       <div class="tweet-text">${escape(tweetObj.content.text)}</div>
       <footer>
       <span class="date">${timeDifference(tweetObj.created_at)}</span>
-      <div class="hover-icons">
-      <i class="fa fa-flag" aria-hidden="true"></i>
-      <i class="fa fa-retweet" aria-hidden="true"></i>
-      <i class="fa fa-heart" aria-hidden="true"></i>
+      <div class="icon-container">
+      <i class="fa fa-flag hover-icons" aria-hidden="true"></i>
+      <i class="fa fa-retweet hover-icons" aria-hidden="true"></i>
+      <i class="fa fa-heart hover-icons" aria-hidden="true"></i>
       </div>
       </footer>
       </article>
