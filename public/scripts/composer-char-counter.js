@@ -1,12 +1,13 @@
 $(document).ready(function() {
-  let overCount;
-  $(".new-tweet textarea").on("input", function() {
-    overCount = 140 - this.value.length
-    $(this).siblings(".counter").text(overCount)
-    if (overCount < 0) {
-      $("span.counter").addClass("exceedlimit")
+  $('.new-tweet form textarea').on('keyup', function() {
+    let $charLength = $(this).val().length;
+    let charsLeft = 140 - $charLength;
+    const $counter = $(this).siblings('.counter')
+    $counter.text(charsLeft);
+    if (charsLeft < 0) {
+      $counter.css("color", "red");
     } else {
-      $("span.counter").removeClass("exceedlimit")
+      $counter.css("color", "inherit");
     }
-  })
-})
+  });
+});
