@@ -6,13 +6,12 @@ module.exports = function makeDataHelpers(db) {
 
     // Save To Database:
 
-    saveTweet: function(newTweet, callback) {
+    saveTweet: function saveTweet(newTweet, callback) {
       db.collection("tweets").insert(newTweet, (err, result) => {
         if (err) {
           return console.error(err);
         }
         callback(null, true);
-        db.close;
       })
     },
 
@@ -24,7 +23,6 @@ module.exports = function makeDataHelpers(db) {
           return console.error(err);
         }
         callback(null, result);
-        db.close;
       })
     }
 
