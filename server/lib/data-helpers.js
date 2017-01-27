@@ -7,7 +7,7 @@ module.exports = function makeDataHelpers(db) {
     // Save To Database:
 
     saveTweet: function(newTweet, callback) {
-      db.collection("tweeter").insert(newTweet, (err, result) => {
+      db.collection("tweets").insert(newTweet, (err, result) => {
         if (err) {
           return console.error(err);
         }
@@ -19,7 +19,7 @@ module.exports = function makeDataHelpers(db) {
     // Pull From Databse:
 
     getTweets: function(callback) {
-      db.collection("tweeter").find().toArray((err, result) => {
+      db.collection("tweets").find().toArray((err, result) => {
         if (err) {
           return console.error(err);
         }
