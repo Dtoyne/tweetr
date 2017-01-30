@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-  // Function Lifted from Stack Overflow:
+  // Function lifted from Stack Overflow;
+  // Passed into createTweetElement() to accurately represent time of tweet;
 
   function timeDifference(datestamp) {
     var msPerMinute = 60 * 1000;
@@ -81,10 +82,8 @@ $(document).ready(function() {
 
     $('#submit-tweet').on('submit', function(event) {
       event.preventDefault();
-
       let $requestData = $(this).serialize();
       let $tweetText = $(this).find('textarea').val();
-
       if ($tweetText === "") {
         $('#flash').text('Please enter a tweet');
         $('#flash').fadeIn('fast', function() {

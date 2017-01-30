@@ -4,7 +4,6 @@
 
 const PORT           = 8080;
 const express        = require("express");
-const sassMiddleware = require("express-sass-middleware");
 const bodyParser     = require("body-parser");
 const app            = express();
 const MongoClient    = require("mongodb").MongoClient;

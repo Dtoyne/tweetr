@@ -7,12 +7,16 @@
   display: none;
 }
 
-.new-tweet h2 {                 /* "Compose Tweet" */
+/* "Compose Tweet" */
+
+.new-tweet h2 {
   margin: 0 0 20px 0;
   border-bottom: thin solid black;
 }
 
-.new-tweet textarea {        /* "What are you humming about?" */
+/* "What are you humming about?" */
+
+.new-tweet textarea {
   padding: 5px;
   width: 100%;
 }
@@ -24,7 +28,9 @@
   font-size: 14px;
 }
 
-.new-tweet .counter {         /* 140 */
+/* 140 */
+
+.new-tweet .counter {
   float: right;
   margin: 5px;
   font-size: 14px;
